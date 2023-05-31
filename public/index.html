@@ -21,7 +21,7 @@
         console.log({ inputDate })
 
         fetchBtn.addEventListener('click', async () => {
-          const response = await fetch('/.netlify/functions/ppm')
+          const response = await fetch(`/.netlify/functions/ppm?date=${inputDate.value}`)
             .then(response => response.json()
           )
 

@@ -20,7 +20,7 @@ const data = datum.map(parseObj);
 const minDate = data.at(0).date;
 const maxDate = data.at(-1).date;
 
-export const handler = async (event, context) => {
+export const handler = async (event) => {
   const dateStr = event?.queryStringParameters?.date;
 
   if (!dateStr) {
