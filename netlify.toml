@@ -1,7 +1,15 @@
-[[edge_functions]]
-function = "hello-world"
-path = "/hello"
+# [[edge_functions]]
+# function = "hello-world"
+# path = "/hello"
+
+# [build]
+# command = "deno run --allow-net deno.ts"
+# publish = "."
 
 [build]
-command = "deno run --allow-net deno.ts"
-publish = "."
+	command = "# no build command"
+	functions = "netlify/functions"
+	publish = "public"
+
+[functions]
+  node_bundler = "esbuild"
