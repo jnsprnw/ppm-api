@@ -1,13 +1,5 @@
-# [[edge_functions]]
-# function = "hello-world"
-# path = "/hello"
-
-# [build]
-# command = "deno run --allow-net deno.ts"
-# publish = "."
-
 [build]
-	command = "# no build command"
+	command = ""
 	functions = "netlify/functions"
 	publish = "public"
 
