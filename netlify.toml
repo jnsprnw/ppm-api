@@ -1,0 +1,7 @@
+[[edge_functions]]
+function = "hello-world"
+path = "/hello"
+
+[build]
+command = "deno run --allow-net deno.ts"
+publish = "."
