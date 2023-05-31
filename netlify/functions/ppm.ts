@@ -21,8 +21,6 @@ const minDate = data.at(0).date;
 const maxDate = data.at(-1).date;
 
 export const handler = async (event, context) => {
-  console.log({event}, {context}, event.queryStringParameters.date)
-
   const dateStr = event?.queryStringParameters?.date;
 
   if (!dateStr) {
